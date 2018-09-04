@@ -2,14 +2,14 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:D:/Github/YachtGame/Temp/Unity.Entities.Tests.dll
+-out:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Temp/Unity.Entities.Tests.dll
 -nostdlib
 -unsafe
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Collections.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Jobs.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Burst.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Mathematics.dll
+-r:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Library/ScriptAssemblies/Unity.Entities.dll
+-r:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Library/ScriptAssemblies/Unity.Collections.dll
+-r:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Library/ScriptAssemblies/Unity.Jobs.dll
+-r:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Library/ScriptAssemblies/Unity.Burst.dll
+-r:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Library/ScriptAssemblies/Unity.Mathematics.dll
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -92,14 +92,14 @@
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
--r:D:/Github/YachtGame/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.2/System.Runtime.CompilerServices.Unsafe.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
+-r:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll
+-r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
+-r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
+-r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
+-r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.2/System.Runtime.CompilerServices.Unsafe.dll
+-r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
+-r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll
+-r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
 -r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
@@ -226,7 +226,7 @@
 -d:UNITY_2017_4_OR_NEWER
 -d:UNITY_2018_1_OR_NEWER
 -d:UNITY_2018_2_OR_NEWER
--d:UNITY_2018_2_2
+-d:UNITY_2018_2_5
 -d:UNITY_2018_2
 -d:UNITY_2018
 -d:PLATFORM_ARCH_64
@@ -314,38 +314,38 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ArchetypeChunkArrayTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ComponentGroupArrayTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ComponentGroupDelta.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ComponentOrderVersionTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ComponentSystemInjectionTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ComponentSystemStartStopRunningTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ComponentSystemTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/CreateAndDestroyTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ECSTestsFixture.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/EntityCommandBufferTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/EntityManagerBugTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/EntityManagerTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/EntityRemapUtilityTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/EntityTransactionTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/FastEqualityTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/FixedArrayTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/IJobProcessComponentDataTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/InjectComponentGroupTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/IterationTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/JobComponentSystemDependencyTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/JobSafetyTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/MoveEntitiesFrom.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/NativeArraySharedValuesTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/SafetyTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/SerializeTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/SharedComponentDataTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/SystemStateComponentTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/TestComponents.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/TransformUpdateTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/TypeManagerTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/Types/ComponentTypeTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/UpdateOrderOptimizerTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/WorldDebuggingToolsTests.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/WorldTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ArchetypeChunkArrayTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ComponentGroupArrayTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ComponentGroupDelta.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ComponentOrderVersionTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ComponentSystemInjectionTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ComponentSystemStartStopRunningTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ComponentSystemTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/CreateAndDestroyTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/ECSTestsFixture.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/EntityCommandBufferTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/EntityManagerBugTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/EntityManagerTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/EntityRemapUtilityTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/EntityTransactionTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/FastEqualityTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/FixedArrayTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/IJobProcessComponentDataTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/InjectComponentGroupTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/IterationTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/JobComponentSystemDependencyTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/JobSafetyTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/MoveEntitiesFrom.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/NativeArraySharedValuesTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/SafetyTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/SerializeTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/SharedComponentDataTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/SystemStateComponentTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/TestComponents.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/TransformUpdateTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/TypeManagerTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/Types/ComponentTypeTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/UpdateOrderOptimizerTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/WorldDebuggingToolsTests.cs
+-i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Tests/WorldTests.cs
 -v:0
