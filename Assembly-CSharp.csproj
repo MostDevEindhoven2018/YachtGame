@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{38C1BDA8-0A31-32CE-F641-A06FD5F536B0}</ProjectGuid>
+    <ProjectGuid>{C5B7D9D3-DA25-8578-B852-0F06816675B9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -68,64 +68,64 @@
     <Compile Include="Assets\Scripts\MANAGERS\MenuCTRL.cs" />
     <Compile Include="Assets\Scripts\MANAGERS\PlayerManager.cs" />
     <Reference Include="Unity.Transforms">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities.Properties">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Jobs">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Jobs.Editor">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities.Editor">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Entities.Editor.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Properties">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Properties.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Properties.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Collections">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rendering.Hybrid">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Properties.Editor">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Properties.Editor.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Properties.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities.Hybrid">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Mathematics">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Entities">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Editor">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Transforms2D">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Transforms2D.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Transforms2D.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Transforms.Hybrid">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -323,7 +323,7 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="AGDLevelDesigner">
-      <HintPath>D:/Github/ecs/ecs_tutorial/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll</HintPath>
+      <HintPath>D:/Github/YachtGame/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

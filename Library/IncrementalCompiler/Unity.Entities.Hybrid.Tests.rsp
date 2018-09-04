@@ -2,15 +2,15 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:D:/Github/ecs/ecs_tutorial/Temp/Unity.Entities.Hybrid.Tests.dll
+-out:D:/Github/YachtGame/Temp/Unity.Entities.Hybrid.Tests.dll
 -nostdlib
 -unsafe
--r:D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Entities.dll
--r:D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll
--r:D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Entities.Tests.dll
--r:D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Entities.TestComponents.dll
--r:D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Collections.dll
--r:D:/Github/ecs/ecs_tutorial/Library/ScriptAssemblies/Unity.Jobs.dll
+-r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.dll
+-r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll
+-r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.Tests.dll
+-r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.TestComponents.dll
+-r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Collections.dll
+-r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Jobs.dll
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -93,7 +93,7 @@
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
--r:D:/Github/ecs/ecs_tutorial/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll
+-r:D:/Github/YachtGame/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll
 -r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
 -r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
 -r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
