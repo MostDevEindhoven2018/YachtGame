@@ -17,7 +17,13 @@ namespace Assets.Scripts
             public SpriteRenderer sr;
             public Animator Anim;
         }
-        
+
+        private struct Data
+        {
+            public ComponentArray<GoalComponent> gc;
+        }
+
+        [Inject] private Data _data;
         protected override void OnUpdate()
         {
             foreach (var entity in GetEntities<MovementGroup>())
@@ -26,6 +32,11 @@ namespace Assets.Scripts
                 var position = entity.Transform.position;
 
                 //update horizontal movement
+                if (_data.gc[0].IsCompleted)
+                {
+                    entity.Speed.XSpeed = 0;
+                }
+
                 position.x += entity.Speed.XSpeed * entity.PlayerInput.Horizontal * Time.deltaTime;
                 
                 //

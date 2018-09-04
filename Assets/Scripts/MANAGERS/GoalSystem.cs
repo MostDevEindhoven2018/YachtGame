@@ -2,9 +2,10 @@
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class GoalSystem : ComponentSystem {
-
+public class GoalSystem : ComponentSystem
+{
 
     private struct Goal
     {
@@ -28,9 +29,11 @@ public class GoalSystem : ComponentSystem {
 
 
             //
-            if (distance < 1)
+            if (distance < 0.25)
             {
-                SceneManager.LoadScene("WinYacht");
+                GoalEntity[0].gc.IsCompleted = true;
+                GoalEntity[0].gc.WinText.text = SceneManager.GetActiveScene().name + " completed";
+
 
             }
         }
