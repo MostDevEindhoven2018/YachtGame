@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/ScenesChangeMenuCRTL/Level_03.unity
+- path: Assets/_Scenes/ScenesChange/Homepage.unity
   isLoaded: 1
   isActive: 1
