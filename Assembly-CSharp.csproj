@@ -65,8 +65,14 @@
     <Compile Include="Assets\Scripts\Hybrid\Components\Speed.cs" />
     <Compile Include="Assets\Scripts\Hybrid\MovementSystem.cs" />
     <Compile Include="Assets\Scripts\Hybrid\PlayerInputSystem.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\LevelMenuChangeCTRL.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\MenuChangeCTRL.cs" />
     <Compile Include="Assets\Scripts\MANAGERS\MenuCTRL.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\NextSceneCTRL.cs" />
     <Compile Include="Assets\Scripts\MANAGERS\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\QuitGameCTRL.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\SceneCTRL.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\ScenesCRTL.cs" />
     <Reference Include="Unity.Transforms">
       <HintPath>C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
     </Reference>

@@ -1,13 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MenuCTRL : MonoBehaviour
 {
-	public void LoadScene(string SceneName)
-	{
-		SceneManager.LoadScene(SceneName);
-	}
+    public void LoadScene(string SceneName)
+    {
+        SceneManager.LoadScene(SceneName);
+    }
 }
 	

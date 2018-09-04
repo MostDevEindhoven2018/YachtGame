@@ -6,12 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/Menu.unity
-    guid: ae1624edf1a1e4f918f5476a24e8e839
+    path: Assets/_Scenes/ScenesChange/Homepage.unity
+    guid: 41a5be418b7427d4fab05f3239faf608
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/_Scenes/ScenesChange/Level_01.unity
+    guid: 8d1ec04f8a0f01e4390fd523efbc1dae
   - enabled: 1
-    path: Assets/_Scenes/Gameplay.unity
-    guid: 63e9c6e53e3b8401c9af31884b299fec
+    path: Assets/_Scenes/ScenesChange/Level_02.unity
+    guid: 1b5e2c1d0d99b2d4aa286981717c9d71
+  - enabled: 1
+    path: Assets/_Scenes/ScenesChange/Level_03.unity
+    guid: cbde7b1fbefe984499fbcc068f64c06b
+  - enabled: 1
+    path: Assets/_Scenes/ScenesChangeMenuCRTL/Homepage.unity
+    guid: a685a14a76a10a04b8f9a5594321116f
+  - enabled: 1
+    path: Assets/_Scenes/ScenesChangeMenuCRTL/Level_01.unity
+    guid: 64b7a3e23a9a06343b7a96cad4a38bf7
+  - enabled: 1
+    path: Assets/_Scenes/ScenesChangeMenuCRTL/Level_02.unity
+    guid: 46422aacab8fc6a47a23e4831f54f022
+  - enabled: 1
+    path: Assets/_Scenes/ScenesChangeMenuCRTL/Level_03.unity
+    guid: c57b4ad5ee913594d95b0d887468080b
   m_configObjects: {}
