@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 442}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 442}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 432, y: 392}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 434, y: 392}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 115
+  controlID: 47
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 379, y: 121}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 116
+  controlID: 26
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,10 +209,10 @@ MonoBehaviour:
     y: 457
     width: 1536
     height: 274
-  m_MinSize: {x: 432, y: 271}
-  m_MaxSize: {x: 14002, y: 10021}
+  m_MinSize: {x: 434, y: 271}
+  m_MaxSize: {x: 14004, y: 10021}
   vertical: 0
-  controlID: 26
+  controlID: 48
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -258,8 +258,8 @@ MonoBehaviour:
     y: 0
     width: 322
     height: 274
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -396,7 +396,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -654,20 +654,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Scenes/ScenesChange
+    - Assets/_Scenes/SceneChangeECS
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/_Scenes/ScenesChange
+  - Assets/_Scenes/SceneChangeECS
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\XJ\Documents\Werk\Asssignment\YachtGame\YachtGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 16.211966}
-    m_SelectedIDs: f20e0000
-    m_LastClickedID: 3826
-    m_ExpandedIDs: 00000000fc0b0000400c0000880e00001a10000082100000b01000009e1100001212000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 2c0c0000
+    m_LastClickedID: 3116
+    m_ExpandedIDs: 00000000100c00005a0c0000f60c0000361000009e100000cc100000ba1100003012000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -695,7 +695,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000fc0b0000400c0000880e00001a10000082100000b01000009e11000012120000
+    m_ExpandedIDs: 00000000100c00005a0c0000f60c0000361000009e100000cc100000ba11000030120000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -726,18 +726,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: e2410000b43f000048000000d6000000d400000090000000a0000000701900003400000084dae9ffe0040000a4d1ffffe804000000050000f40400001ed3ffffe604000002c4fdff46050000ea040000ec04000002050000f60400007e050000de0400000c050000a2250000b4270000484affff22c3feff90c5feff640a00008e090000be090000700a00000000000000370000b849000042300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Level_01_
-      m_OriginalName: Level_01_
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 3754
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
@@ -919,9 +919,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 28130000
     m_LastClickedID: 0
-    m_ExpandedIDs: fecefdff1ad2fdff9a33feffb45efeff1467feff8668feff446ffeffa874feff967cfeff1692feff4693feffce9bfeff58a6feffe8aafeff96aefeff44b3fefff833ffff1235ffff3638ffffa23affffb83bfffff43cffff9c40ffff4844ffff8a4cffff50f4ffffe0fbffff0000000046530000cc5300005e8d00004ac300007ac3000094c3000028e80000b6e8000000e90000
+    m_ExpandedIDs: d2c8ffffcad6ffffa6dfffffc4ebffff84f5ffffe0fbffff0000000058440000e6440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -939,7 +939,8 @@ MonoBehaviour:
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 11}
     m_SearchString: 
-  m_ExpandedScenes: []
+  m_ExpandedScenes:
+  - Homepage_ 1
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0

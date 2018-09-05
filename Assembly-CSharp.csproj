@@ -65,14 +65,24 @@
     <Compile Include="Assets\Scripts\Hybrid\Components\Speed.cs" />
     <Compile Include="Assets\Scripts\Hybrid\MovementSystem.cs" />
     <Compile Include="Assets\Scripts\Hybrid\PlayerInputSystem.cs" />
-    <Compile Include="Assets\Scripts\MANAGERS\LevelMenuChangeCTRL.cs" />
-    <Compile Include="Assets\Scripts\MANAGERS\MenuChangeCTRL.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\ECS\Component\LevelMenuChangeComponent.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\ECS\Component\MenuChangeComponent.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\ECS\Component\NextSceneComponent.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\ECS\Component\QuitComponent.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\ECS\Component\SceneComponent.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\ECS\System\LevelMenuChangeSystem.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\ECS\System\MenuChangeSystem.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\ECS\System\NextSceneSystem.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\ECS\System\QuitSystem.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\ECS\System\SceneSystem.cs" />
     <Compile Include="Assets\Scripts\MANAGERS\MenuCTRL.cs" />
-    <Compile Include="Assets\Scripts\MANAGERS\NextSceneCTRL.cs" />
     <Compile Include="Assets\Scripts\MANAGERS\PlayerManager.cs" />
-    <Compile Include="Assets\Scripts\MANAGERS\QuitGameCTRL.cs" />
-    <Compile Include="Assets\Scripts\MANAGERS\SceneCTRL.cs" />
     <Compile Include="Assets\Scripts\MANAGERS\ScenesCRTL.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\Scripts\LevelMenuChangeCTRL.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\Scripts\MenuChangeCTRL.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\Scripts\NextSceneCTRL.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\Scripts\QuitGameCTRL.cs" />
+    <Compile Include="Assets\Scripts\MANAGERS\Scripts\SceneCTRL.cs" />
     <Reference Include="Unity.Transforms">
       <HintPath>C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
     </Reference>
