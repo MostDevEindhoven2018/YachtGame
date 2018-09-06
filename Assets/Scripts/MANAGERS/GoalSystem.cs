@@ -23,11 +23,13 @@ public class GoalSystem : ComponentSystem
     [Inject] private Data _data;
     protected override void OnUpdate()
     {
+
         var GoalEntity = GetEntities<Goal>();
 
 
         if (GoalEntity.Length > 0)
         {
+            Time.timeScale = 1;
             var distance = math.distance(GoalEntity[0].gc.transform.position.x, _data.InputComponents[0].transform.position.x);
 
 
@@ -55,6 +57,7 @@ public class GoalSystem : ComponentSystem
                 }
 
                 GoalEntity[0].gc.Menus.SetActive(true);
+                Time.timeScale = 0;
             }
         }
     }
