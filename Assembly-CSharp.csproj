@@ -61,7 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\script.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Components\Jump.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Components\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Components\Speed.cs" />
@@ -69,8 +68,6 @@
     <Compile Include="Assets\Scripts\Hybrid\Systems\JumpSystem.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Systems\MovementSystem.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Systems\PlayerInputSystem.cs" />
-    <Compile Include="Assets\Scripts\MANAGERS\MenuCTRL.cs" />
-    <Compile Include="Assets\Scripts\MANAGERS\PlayerManager.cs" />
     <Reference Include="Unity.Transforms">
       <HintPath>C:/Users/mvdve/Documents/YachtGame/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
     </Reference>
