@@ -1,45 +1,30 @@
 ﻿using Unity.Entities;
-using Unity.Mathematics;
-using Unity.Transforms;
 using UnityEngine;
 
-namespace Assets.Scripts
+namespace Assets.Scripts.Hybrid
 {
-    public class MovementSystem : ComponentSystem
+    class AnimationSystem : ComponentSystem
     {
-
-        public struct MovementGroup
+        public struct PlayerGroup
         {
-            public Transform Transform;
             public PlayerInput PlayerInput;
+            public Transform Transform;
             public Speed Speed;
             public Rigidbody2D rb;
             public SpriteRenderer sr;
             public Animator Anim;
         }
-        
+
         protected override void OnUpdate()
         {
-            foreach (var entity in GetEntities<MovementGroup>())
+            foreach (var entity in GetEntities<PlayerGroup>())
             {
-                //declare position variable
-                var position = entity.Transform.position;
-
-                //update horizontal movement
-                position.x += entity.Speed.XSpeed * entity.PlayerInput.Horizontal * Time.deltaTime;
-                
-                //
-                if(Input.GetKeyDown(KeyCode.UpArrow))
-                {
-                    entity.rb.AddForce(new Vector2(entity.rb.velocity.x, entity.Speed.YSpeed));
-                }
-
                 if (entity.rb.velocity.y != 0)
                 {
                     entity.Anim.SetInteger("State", 3);
                 }
 
-                    if (entity.PlayerInput.Horizontal < 0)
+                if (entity.PlayerInput.Horizontal < 0)
                 {
                     if (entity.rb.velocity.y == 0)
                     {
@@ -60,12 +45,9 @@ namespace Assets.Scripts
                     if (entity.rb.velocity.y == 0)
                     {
                         entity.Anim.SetInteger("State", 0);
-                    }                    
+                    }
                 }
-
-                entity.Transform.position = position;
-                //entity.Transform.rotation = rotation;
             }
-        } 
+        }
     }
 }
