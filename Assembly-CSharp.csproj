@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{C5B7D9D3-DA25-8578-B852-0F06816675B9}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -64,7 +65,6 @@
     <Compile Include="Assets\Scripts\Hybrid\Components\Jump.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Components\PlayerInput.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Components\Speed.cs" />
-    <Compile Include="Assets\Scripts\Hybrid\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Systems\AnimationSystem.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Systems\JumpSystem.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Systems\MovementSystem.cs" />
