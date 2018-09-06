@@ -1,11 +1,14 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Threading;
 
 public class GoalSystem : ComponentSystem
 {
+    private float time = 0;
 
     private struct Goal
     {
@@ -30,11 +33,28 @@ public class GoalSystem : ComponentSystem
 
             //
             if (distance < 0.25)
-            {
+            {               
                 GoalEntity[0].gc.IsCompleted = true;
-                GoalEntity[0].gc.WinText.text = SceneManager.GetActiveScene().name + " completed";
+                
+            }
 
+            if (GoalEntity[0].gc.IsCompleted)
+            {
+                time += Time.deltaTime;
+                Debug.Log(time);
+                if (time > 2.0f)
+                {
+                    GoalEntity[0].gc.WinText.text = "";
+                    GoalEntity[0].gc.IsCompleted = false;
+                    time = 0;
+                }
+                else
+                {
+                    GoalEntity[0].gc.WinText.text = SceneManager.GetActiveScene().name + " completed";
 
+                }
+
+                GoalEntity[0].gc.Menus.SetActive(true);
             }
         }
     }

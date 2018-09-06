@@ -32,10 +32,10 @@ namespace Assets.Scripts
                 var position = entity.Transform.position;
 
                 //update horizontal movement
-                if (_data.gc[0].IsCompleted)
-                {
-                    entity.Speed.XSpeed = 0;
-                }
+                //if (_data.gc[0].IsCompleted)
+                //{
+                //    entity.Speed.XSpeed = 0;
+                //}
 
                 position.x += entity.Speed.XSpeed * entity.PlayerInput.Horizontal * Time.deltaTime;
                 

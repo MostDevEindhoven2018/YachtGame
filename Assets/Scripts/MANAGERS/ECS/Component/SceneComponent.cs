@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneComponent : MonoBehaviour
 {
-    public int LevelNumber;
+    public string LevelName;
     public Button button;
 
     public bool Clicked=false;

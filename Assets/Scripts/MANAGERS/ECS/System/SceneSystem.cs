@@ -17,7 +17,7 @@ public class SceneSystem : ComponentSystem
         {
             if (entity.ChangeScene.Clicked==true)
             {                
-                SceneManager.LoadScene(entity.ChangeScene.LevelNumber);
+                SceneManager.LoadScene(entity.ChangeScene.LevelName);
                 entity.ChangeScene.Clicked = false;
             }
             
