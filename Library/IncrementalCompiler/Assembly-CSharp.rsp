@@ -2,29 +2,29 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:D:/Github/YachtGame/Temp/Assembly-CSharp.dll
+-out:C:/GameDemo/Temp/Assembly-CSharp.dll
 -nostdlib
 -unsafe
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Transforms.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.Properties.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Jobs.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Jobs.Editor.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.Editor.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Properties.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Collections.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Burst.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Properties.Editor.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Mathematics.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Burst.Editor.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Transforms2D.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Transforms.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Entities.Properties.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Jobs.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Jobs.Editor.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Entities.Editor.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Properties.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Collections.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Burst.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Rendering.Hybrid.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Properties.Editor.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Mathematics.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Entities.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Burst.Editor.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Transforms2D.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -92,11 +92,11 @@
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
--r:D:/Github/YachtGame/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.2/System.Runtime.CompilerServices.Unsafe.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
+-r:C:/GameDemo/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll
+-r:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
+-r:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.2/System.Runtime.CompilerServices.Unsafe.dll
+-r:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
+-r:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.Core.dll"
@@ -222,7 +222,7 @@
 -d:UNITY_2017_4_OR_NEWER
 -d:UNITY_2018_1_OR_NEWER
 -d:UNITY_2018_2_OR_NEWER
--d:UNITY_2018_2_2
+-d:UNITY_2018_2_1
 -d:UNITY_2018_2
 -d:UNITY_2018
 -d:PLATFORM_ARCH_64
@@ -310,11 +310,11 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
--i:D:/Github/YachtGame/Assets/script.cs
--i:D:/Github/YachtGame/Assets/Scripts/Hybrid/Components/PlayerInput.cs
--i:D:/Github/YachtGame/Assets/Scripts/Hybrid/Components/Speed.cs
--i:D:/Github/YachtGame/Assets/Scripts/Hybrid/MovementSystem.cs
--i:D:/Github/YachtGame/Assets/Scripts/Hybrid/PlayerInputSystem.cs
--i:D:/Github/YachtGame/Assets/Scripts/MANAGERS/MenuCTRL.cs
--i:D:/Github/YachtGame/Assets/Scripts/MANAGERS/PlayerManager.cs
+-i:C:/GameDemo/Assets/script.cs
+-i:C:/GameDemo/Assets/Scripts/Hybrid/Components/PlayerInput.cs
+-i:C:/GameDemo/Assets/Scripts/Hybrid/Components/Speed.cs
+-i:C:/GameDemo/Assets/Scripts/Hybrid/MovementSystem.cs
+-i:C:/GameDemo/Assets/Scripts/Hybrid/PlayerInputSystem.cs
+-i:C:/GameDemo/Assets/Scripts/MANAGERS/MenuCTRL.cs
+-i:C:/GameDemo/Assets/Scripts/MANAGERS/PlayerManager.cs
 -v:0

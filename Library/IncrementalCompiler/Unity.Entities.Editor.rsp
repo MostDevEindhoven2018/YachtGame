@@ -2,14 +2,14 @@
 -target:library
 -nowarn:0169
 -langversion:7
--out:D:/Github/YachtGame/Temp/Unity.Entities.Editor.dll
+-out:C:/GameDemo/Temp/Unity.Entities.Editor.dll
 -nostdlib
 -unsafe
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Entities.Properties.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Mathematics.dll
--r:D:/Github/YachtGame/Library/ScriptAssemblies/Unity.Properties.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Entities.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Entities.Properties.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Mathematics.dll
+-r:C:/GameDemo/Library/ScriptAssemblies/Unity.Properties.dll
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -89,14 +89,14 @@
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
--r:D:/Github/YachtGame/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.2/System.Runtime.CompilerServices.Unsafe.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll
--r:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
+-r:C:/GameDemo/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll
+-r:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
+-r:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
+-r:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
+-r:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.2/System.Runtime.CompilerServices.Unsafe.dll
+-r:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
+-r:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll
+-r:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
 -r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
@@ -223,7 +223,7 @@
 -d:UNITY_2017_4_OR_NEWER
 -d:UNITY_2018_1_OR_NEWER
 -d:UNITY_2018_2_OR_NEWER
--d:UNITY_2018_2_2
+-d:UNITY_2018_2_1
 -d:UNITY_2018_2
 -d:UNITY_2018
 -d:PLATFORM_ARCH_64
@@ -311,23 +311,23 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/AssemblyInfo.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/ComponentGroupGUI.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/ComponentGroupListView.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/ComponentTypeChooser.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/ComponentTypeFilterUI.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/ComponentTypeListView.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/EntityDebugger.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/EntityDebuggerStyles.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/EntityIMGUIVisitor.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/EntityListView.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/EntitySelectionProxy.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/EntitySelectionProxyEditor.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/SystemListView.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/WorldPopup.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/ExtraTypesProvider.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/GameObjectEntityEditor.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/GUIHelpers.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/GUIStyleAsset.cs
--i:C:/Users/royva/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/SystemInclusionList.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/AssemblyInfo.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/ComponentGroupGUI.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/ComponentGroupListView.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/ComponentTypeChooser.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/ComponentTypeFilterUI.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/ComponentTypeListView.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/EntityDebugger.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/EntityDebuggerStyles.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/EntityIMGUIVisitor.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/EntityListView.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/EntitySelectionProxy.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/EntitySelectionProxyEditor.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/SystemListView.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/EntityDebugger/WorldPopup.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/ExtraTypesProvider.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/GameObjectEntityEditor.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/GUIHelpers.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/GUIStyleAsset.cs
+-i:C:/Users/vishn_000/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Editor/SystemInclusionList.cs
 -v:0
