@@ -2,7 +2,11 @@
 -target:library
 -nowarn:0169
 -langversion:7
+<<<<<<< HEAD
 -out:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Temp/Unity.PackageManagerUI.Editor.dll
+=======
+-out:C:/Users/Paulina/Documents/YachtGame/Temp/Unity.PackageManagerUI.Editor.dll
+>>>>>>> feature/GoalSystemSubGoalSystem
 -nostdlib
 -unsafe
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
@@ -84,6 +88,7 @@
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
+<<<<<<< HEAD
 -r:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll
 -r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
 -r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
@@ -92,6 +97,16 @@
 -r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
 -r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll
 -r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
+=======
+-r:C:/Users/Paulina/Documents/YachtGame/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.2/System.Runtime.CompilerServices.Unsafe.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
+>>>>>>> feature/GoalSystemSubGoalSystem
 -r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
@@ -306,6 +321,7 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
+<<<<<<< HEAD
 -i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/AssemblyInfo.cs
 -i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/External/SemVersion.cs
 -i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/External/SemVersionExtension.cs
@@ -357,4 +373,57 @@
 -i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageManagerWindow.cs
 -i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageSearchToolbar.cs
 -i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageStatusBar.cs
+=======
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/AssemblyInfo.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/External/SemVersion.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/External/SemVersionExtension.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Common/ApplicationUtil.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Common/OperationSignal.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Common/Resources.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Common/ThreadedDelay.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Interfaces/IAddOperation.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Interfaces/IBaseOperation.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Interfaces/IListOperation.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Interfaces/IOperationFactory.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Interfaces/IRemoveOperation.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Interfaces/ISearchOperation.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/OperationFactory.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/Package.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageAssetPostprocessor.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageCollection.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageError.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageFilter.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageGroupOrigins.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageInfo.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageInfoListExtensions.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageJsonHelper.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageListExtensions.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageOrigin.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageSearchFilter.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageState.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Packages/PackageTag.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Upm/UpmAddOperation.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Upm/UpmBaseOperation.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Upm/UpmListOperation.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Upm/UpmOperationFactory.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Upm/UpmRemoveOperation.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/Services/Upm/UpmSearchOperation.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/Common/Alert.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/Common/LoadingSpinner.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/Common/PopupField.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/Common/UIUtils.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/Common/VersionItem.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/Interfaces/IPackageManagerExtension.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageAddFromUrlField.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageDetails.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageFiltering.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageGroup.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageItem.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageList.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageManagerExtensions.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageManagerToolbar.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageManagerWindow.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageSearchToolbar.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.package-manager-ui@2.0.0-preview.3/Editor/Sources/UI/PackageStatusBar.cs
+>>>>>>> feature/GoalSystemSubGoalSystem
 -v:0

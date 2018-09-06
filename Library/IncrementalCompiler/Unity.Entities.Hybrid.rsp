@@ -2,12 +2,21 @@
 -target:library
 -nowarn:0169
 -langversion:7
+<<<<<<< HEAD
 -out:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Temp/Unity.Entities.Hybrid.dll
 -nostdlib
 -unsafe
 -r:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Library/ScriptAssemblies/Unity.Entities.dll
 -r:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Library/ScriptAssemblies/Unity.Collections.dll
 -r:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Library/ScriptAssemblies/Unity.Jobs.dll
+=======
+-out:C:/Users/Paulina/Documents/YachtGame/Temp/Unity.Entities.Hybrid.dll
+-nostdlib
+-unsafe
+-r:C:/Users/Paulina/Documents/YachtGame/Library/ScriptAssemblies/Unity.Entities.dll
+-r:C:/Users/Paulina/Documents/YachtGame/Library/ScriptAssemblies/Unity.Collections.dll
+-r:C:/Users/Paulina/Documents/YachtGame/Library/ScriptAssemblies/Unity.Jobs.dll
+>>>>>>> feature/GoalSystemSubGoalSystem
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.AIModule.dll"
 -r:"C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.ARModule.dll"
@@ -86,6 +95,7 @@
 -r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
 -r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
+<<<<<<< HEAD
 -r:C:/Users/XJ/Documents/Werk/Asssignment/YachtGame/YachtGame/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll
 -r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
 -r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
@@ -94,6 +104,16 @@
 -r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
 -r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll
 -r:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
+=======
+-r:C:/Users/Paulina/Documents/YachtGame/Assets/AbleGamesDev/LevelDesigner/AGDLevelDesigner.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/Editor/UnityEditor.Analytics.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.collections@0.0.9-preview.2/System.Runtime.CompilerServices.Unsafe.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/Editor/UnityEditor.Purchasing.dll
+-r:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll
+>>>>>>> feature/GoalSystemSubGoalSystem
 -r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\mscorlib.dll"
 -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\4.7.1-api\System.dll"
@@ -308,6 +328,7 @@
 -d:ENABLE_BURST_AOT
 -d:UNITY_TEAM_LICENSE
 -d:ENABLE_VSTU
+<<<<<<< HEAD
 -i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/AssemblyInfo.cs
 -i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/EntityManagerExtensions.cs
 -i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/GameObjectEntity.cs
@@ -319,4 +340,17 @@
 -i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/Iterators/TransformAccessArrayIterator.cs
 -i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/PlayerLoopDisableManager.cs
 -i:C:/Users/XJ/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/PlayerLoopManager.cs
+=======
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/AssemblyInfo.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/EntityManagerExtensions.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/GameObjectEntity.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/HybridSerializeUtility.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/Injection/AutomaticWorldBootstrap.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/Injection/DefaultWorldInitialization.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/Iterators/ComponentArray.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/Iterators/GameObjectArray.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/Iterators/TransformAccessArrayIterator.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/PlayerLoopDisableManager.cs
+-i:C:/Users/Paulina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.entities@0.0.12-preview.8/Unity.Entities.Hybrid/PlayerLoopManager.cs
+>>>>>>> feature/GoalSystemSubGoalSystem
 -v:0
