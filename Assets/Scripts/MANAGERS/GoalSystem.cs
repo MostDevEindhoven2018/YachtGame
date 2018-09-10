@@ -35,29 +35,22 @@ public class GoalSystem : ComponentSystem
 
             //
             if (distance < 0.25)
-            {               
+            {
                 GoalEntity[0].gc.IsCompleted = true;
-                
+
             }
 
             if (GoalEntity[0].gc.IsCompleted)
             {
-                time += Time.deltaTime;
-                Debug.Log(time);
-                if (time > 2.0f)
-                {
-                    GoalEntity[0].gc.WinText.text = "";
-                    GoalEntity[0].gc.IsCompleted = false;
-                    time = 0;
-                }
-                else
-                {
-                    GoalEntity[0].gc.WinText.text = SceneManager.GetActiveScene().name + " completed";
+                GoalEntity[0].gc.WinText.text = SceneManager.GetActiveScene().name + " completed";
+                Time.timeScale = 0;                
 
-                }
+                GoalEntity[0].gc.WinText.text = "";
+                GoalEntity[0].gc.IsCompleted = false;
+                time = 0;
 
                 GoalEntity[0].gc.Menus.SetActive(true);
-                Time.timeScale = 0;
+
             }
         }
     }

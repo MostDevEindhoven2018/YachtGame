@@ -9,4 +9,6 @@ public class GoalComponent : MonoBehaviour {
     public bool IsCompleted;
     public Text WinText;
     public GameObject Menus;
+
+    public float t;
 }
