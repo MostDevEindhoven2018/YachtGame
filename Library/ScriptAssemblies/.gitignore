@@ -1,3 +1,4 @@
+/.gitignore
 /Assembly-CSharp.dll
 /Assembly-CSharp.pdb
 /BuiltinAssemblies.stamp
