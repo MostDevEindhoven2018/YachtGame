@@ -30,9 +30,11 @@ public class GoalSystem : ComponentSystem
         if (GoalEntity.Length > 0)
         {
             Time.timeScale = 1;
-            var distance = math.distance(GoalEntity[0].gc.transform.position.x, _data.InputComponents[0].transform.position.x);
+            GoalEntity[0].gc.WinText.text = "";
 
-
+            var distance = 
+                math.distance(GoalEntity[0].gc.transform.position.x, _data.InputComponents[0].transform.position.x);
+            
             //
             if (distance < 0.25)
             {
@@ -42,12 +44,13 @@ public class GoalSystem : ComponentSystem
 
             if (GoalEntity[0].gc.IsCompleted)
             {
-                GoalEntity[0].gc.WinText.text = SceneManager.GetActiveScene().name + " completed";
-                Time.timeScale = 0;                
+                GoalEntity[0].gc.WinText.text = 
+                    SceneManager.GetActiveScene().name.Replace("_", " ") + " completed";
+                Time.timeScale = 0;              
 
-                GoalEntity[0].gc.WinText.text = "";
+                
+                
                 GoalEntity[0].gc.IsCompleted = false;
-                time = 0;
 
                 GoalEntity[0].gc.Menus.SetActive(true);
 

@@ -10,5 +10,4 @@ public class GoalComponent : MonoBehaviour {
     public Text WinText;
     public GameObject Menus;
 
-    public float t;
 }
