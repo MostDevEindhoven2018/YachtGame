@@ -5,10 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-
-public class Jump : MonoBehaviour
+namespace Assets.Scripts.Hybrid.Components
 {
-    public float MaxJumpHeigth;
-    public float IntendedJumpHeigth;
-    public bool AllowAdditionalHeigth = true;
+    public class Jump : MonoBehaviour
+    {
+        public float MaxJumpHeigth;
+        public float IntendedJumpHeigth;
+        public bool AllowAdditionalHeigth = true;
+    }
 }

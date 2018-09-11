@@ -1,7 +1,7 @@
 ﻿using Unity.Entities;
 using UnityEngine;
 
-namespace Assets.Scripts
+namespace Assets.Scripts.Hybrid.Systems
 {
     public class JumpSystem : ComponentSystem
     {
@@ -9,6 +9,11 @@ namespace Assets.Scripts
         public struct PlayerGroup
         {
             
+        }
+
+        public struct EnvironmentGroup
+        {
+
         }
 
         protected override void OnUpdate()

@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInput : MonoBehaviour {
+namespace Assets.Scripts.Hybrid.Components
+{
+    public class PlayerInput : MonoBehaviour
+    {
 
-    public float Horizontal;
-    public float Vertical;
+        public float Horizontal;
+        public float Vertical;
 
 
-    public bool JumpPressed;
-    public bool JumpReleased;
-
+        public bool JumpPressed;
+        public bool JumpReleased;
+    }
 }

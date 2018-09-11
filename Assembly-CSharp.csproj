@@ -61,8 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Hybrid\Components\EnviromentTag.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Components\Jump.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Components\PlayerInput.cs" />
+    <Compile Include="Assets\Scripts\Hybrid\Components\PlayerTag.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Components\Speed.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Systems\AnimationSystem.cs" />
     <Compile Include="Assets\Scripts\Hybrid\Systems\JumpSystem.cs" />
