@@ -1,7 +1,8 @@
-﻿using Unity.Entities;
+﻿using Assets.Scripts.Hybrid.Components;
+using Unity.Entities;
 using UnityEngine;
 
-namespace Assets.Scripts
+namespace Assets.Scripts.Hybrid.Systems
 {
     public class MovementSystem : ComponentSystem
     {

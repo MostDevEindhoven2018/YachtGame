@@ -1,23 +1,25 @@
-﻿using Unity.Entities;
+﻿using Assets.Scripts.Hybrid.Components;
+using Unity.Entities;
 using Unity.Jobs;
 using UnityEngine;
 
-public class PlayerInputSystem : ComponentSystem
+
+namespace Assets.Scripts.Hybrid.Systems
 {
-    public struct InputGroup
+    public class PlayerInputSystem : ComponentSystem
     {
-        public PlayerInput PlayerInput;
-    }
-
-    protected override void OnUpdate()
-    {
-        foreach (var entity in GetEntities<InputGroup>())
+        public struct InputGroup
         {
-            entity.PlayerInput.Horizontal = Input.GetAxisRaw("Horizontal");
+            public PlayerInput PlayerInput;
+        }
 
-            entity.PlayerInput.JumpPressed = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow);
-            entity.PlayerInput.JumpReleased = Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow);
-            //entity.PlayerInput.Vertical = Input.GetKeyDown(KeyCode.UpArrow);
+        protected override void OnUpdate()
+        {
+            foreach (var entity in GetEntities<InputGroup>())
+            {
+                entity.PlayerInput.Horizontal = Input.GetAxisRaw("Horizontal");
+                entity.PlayerInput.Vertical = Input.GetAxisRaw("Vertical");
+            }
         }
     }
 }
