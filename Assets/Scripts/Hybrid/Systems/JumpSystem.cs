@@ -1,4 +1,5 @@
-﻿using Unity.Entities;
+﻿using Assets.Scripts.Hybrid.Components;
+using Unity.Entities;
 using UnityEngine;
 
 namespace Assets.Scripts.Hybrid.Systems
@@ -8,17 +9,16 @@ namespace Assets.Scripts.Hybrid.Systems
 
         public struct PlayerGroup
         {
-            
-        }
-
-        public struct EnvironmentGroup
-        {
-
             public Transform Transform;
             public PlayerInput PlayerInput;
             public Speed Speed;
             public Rigidbody2D rb;
             public Jump Jump;
+        }
+
+        public struct EnvironmentGroup
+        {
+            
         }
 
         protected override void OnUpdate()
