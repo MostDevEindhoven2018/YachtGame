@@ -18,20 +18,12 @@ namespace Assets.Scripts
         protected override void OnUpdate()
         {
             foreach (var entity in GetEntities<PlayerGroup>())
-            {
-                //if(entity.PlayerInput.JumpReleased)
-                //{
-                //    entity.Jump.AllowAdditionalHeigth = false;
-                //}
+            {     
                 
-
-
-                if (Input.GetKey(KeyCode.UpArrow) && entity.Jump.AllowAdditionalHeigth)
+                if (Input.GetKeyDown(KeyCode.UpArrow) && entity.Jump.IsGrounded == true)
                 {
                     entity.rb.AddForce(new Vector2(0, entity.Speed.YSpeed));
-                }
-
-                
+                }                
             }
         }
     }
