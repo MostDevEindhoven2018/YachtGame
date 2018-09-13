@@ -1,5 +1,4 @@
-﻿using Assets.Scripts.Hybrid.Components;
-using Unity.Entities;
+﻿using Unity.Entities;
 using UnityEngine;
 
 namespace Assets.Scripts.Hybrid.Systems
@@ -9,27 +8,30 @@ namespace Assets.Scripts.Hybrid.Systems
 
         public struct PlayerGroup
         {
-            public Transform Transform;
-            public PlayerInput PlayerInput;
-            public Speed Speed;
-            public Rigidbody2D rb;
-            public Jump Jump;
+            
         }
 
         public struct EnvironmentGroup
         {
-            
+
         }
 
         protected override void OnUpdate()
         {
             foreach (var entity in GetEntities<PlayerGroup>())
+<<<<<<< HEAD
             {     
                 
                 if (Input.GetKeyDown(KeyCode.UpArrow) && entity.Jump.IsGrounded == true)
                 {
                     entity.rb.AddForce(new Vector2(0, entity.Speed.YSpeed));
                 }                
+=======
+            {
+               
+
+                
+>>>>>>> origin/Development
             }
         }
     }

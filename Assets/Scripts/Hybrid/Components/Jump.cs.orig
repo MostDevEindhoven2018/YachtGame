@@ -7,10 +7,9 @@ using UnityEngine;
 
 namespace Assets.Scripts.Hybrid.Components
 {
-    public class Jump : MonoBehaviour
-    {
-        public float MaxJumpHeigth;
-        public float IntendedJumpHeigth;
+<<<<<<< HEAD
+    public float MaxJumpHeigth;
+    public float IntendedJumpHeigth;
     public bool IsGrounded;
     public Transform Feet;
     public float BoxWidth;
@@ -21,5 +20,13 @@ namespace Assets.Scripts.Hybrid.Components
     {
         Gizmos.DrawWireCube(Feet.position, new Vector3(BoxWidth, BoxHeight,0));
     }
+}
+=======
+    public class Jump : MonoBehaviour
+    {
+        public float MaxJumpHeigth;
+        public float IntendedJumpHeigth;
+        public bool AllowAdditionalHeigth = true;
     }
 }
+>>>>>>> origin/Development

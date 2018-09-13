@@ -4,9 +4,8 @@ using UnityEngine;
 
 namespace Assets.Scripts.Hybrid.Systems
 {
-    public class JumpSystem : ComponentSystem
+    class CollisionSystem : ComponentSystem
     {
-
         public struct PlayerGroup
         {
             public Transform Transform;
@@ -16,20 +15,12 @@ namespace Assets.Scripts.Hybrid.Systems
             public Jump Jump;
         }
 
-        public struct EnvironmentGroup
-        {
-            
-        }
-
         protected override void OnUpdate()
         {
             foreach (var entity in GetEntities<PlayerGroup>())
-            {     
+            {
+                entity.Jump.IsGrounded = Physics2D.OverlapBox(new Vector2(entity.Jump.Feet.position.x, entity.Jump.Feet.position.y), new Vector2(entity.Jump.BoxWidth, entity.Jump.BoxHeight), 360.0f, entity.Jump.WhatIsGround);
                 
-                if (Input.GetKeyDown(KeyCode.UpArrow) && entity.Jump.IsGrounded == true)
-                {
-                    entity.rb.AddForce(new Vector2(0, entity.Speed.YSpeed));
-                }                
             }
         }
     }
