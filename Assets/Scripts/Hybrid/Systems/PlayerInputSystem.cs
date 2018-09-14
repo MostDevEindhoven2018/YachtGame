@@ -15,9 +15,9 @@ namespace Assets.Scripts.Hybrid.Systems
         protected override void OnUpdate()
         {
             foreach (var entity in GetEntities<InputGroup>())
-            {
-                entity.PlayerInput.Horizontal = Input.GetAxis("Horizontal");
-                //entity.PlayerInput.Vertical = Input.GetKeyDown(KeyCode.UpArrow);
+            {               
+                entity.PlayerInput.Horizontal = Input.GetAxisRaw("Horizontal");
+                entity.PlayerInput.Vertical = Input.GetAxisRaw("Vertical");
             }
         }
     }

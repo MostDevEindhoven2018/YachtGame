@@ -18,7 +18,7 @@ namespace Assets.Scripts.Hybrid.Systems
 
         public struct EnvironmentGroup
         {
-            
+
         }
 
         protected override void OnUpdate()

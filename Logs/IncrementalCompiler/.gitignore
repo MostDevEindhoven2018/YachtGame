@@ -30,3 +30,4 @@
 /unity_incremental_compiler_server.log
 *.TextMeshPro.rsp
 *.rsp
+*.TextMeshPro.Editor.rsp
