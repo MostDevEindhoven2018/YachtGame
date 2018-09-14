@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 95195115446839018}
   - component: {fileID: 61362590776227624}
   - component: {fileID: 50498866435138576}
-  - component: {fileID: 114460029898797548}
-  - component: {fileID: 114624007458279594}
+  - component: {fileID: 114383517462930482}
   - component: {fileID: 114656634566822138}
+  - component: {fileID: 114314116688226000}
+  - component: {fileID: 114971160922640278}
   m_Layer: 12
   m_Name: Cat
   m_TagString: Player
@@ -40,7 +41,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1075799969243862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.313, y: -1.789, z: 0}
+  m_LocalPosition: {x: -10, y: 3.48019, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -60,12 +61,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2.5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61362590776227624
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -109,7 +110,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114460029898797548
+--- !u!114 &114314116688226000
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,9 +121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3093b20803ff0ef4b846bc993ae247d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Horizontal: 3
-  Vertical: 5
---- !u!114 &114624007458279594
+  Horizontal: 0
+  Vertical: 0
+--- !u!114 &114383517462930482
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,8 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 471ece548badb124ea44088dbe808ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  XSpeed: 0
-  YSpeed: 0
+  XSpeed: 10
+  YSpeed: 600
 --- !u!114 &114656634566822138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,6 +147,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bf10cdea1344482e91a4f2b58506b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114971160922640278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075799969243862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89216cd9e9b86984c8d20113bbe24d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAlive: 1
 --- !u!212 &212603915005293974
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -181,7 +194,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5ef2a1d944fb7440e8d6b6a75e210e52, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7e180f310a93c4905b3d65db60b8b80c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
