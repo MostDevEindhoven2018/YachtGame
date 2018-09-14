@@ -6,6 +6,7 @@ public class NextSceneComponent : MonoBehaviour
 {
     public Button button;
 
+
     public bool Clicked=false;
 
     void Clicking()
