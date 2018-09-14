@@ -2,24 +2,28 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class NextSceneComponent : MonoBehaviour
+namespace Assets.Scripts.Hybrid.Components
 {
-    public Button button;
-
-
-    public bool Clicked=false;
-
-    void Clicking()
+    public class NextSceneComponent : MonoBehaviour
     {
-        Clicked=true;
-    }
+        public Button button;
 
-    void Start()
-    {
-        button = button.GetComponent<Button>();
 
-        button.onClick.AddListener(Clicking);
-        
+        public bool Clicked = false;
+
+        void Clicking()
+        {
+            Clicked = true;
+        }
+
+        void Start()
+        {
+            button = button.GetComponent<Button>();
+
+            button.onClick.AddListener(Clicking);
+
+        }
     }
 }
-	
+
+

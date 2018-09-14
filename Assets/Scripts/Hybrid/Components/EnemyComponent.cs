@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyComponent : MonoBehaviour {
+namespace Assets.Scripts.Hybrid.Components
+{
+    public class EnemyComponent : MonoBehaviour
+    {
 
-    public float Damage;
+        public float Damage;
 
+    }
 }
+

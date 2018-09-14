@@ -2,26 +2,31 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Unity.Entities;
+using Assets.Scripts.Hybrid.Components;
 
-public class QuitSystem : ComponentSystem
+namespace Assets.Scripts.Hybrid.Systems
 {
-    private struct Data
+    public class QuitSystem : ComponentSystem
     {
-        public QuitComponent QuitGame;
-    }
-
-
-    protected override void OnUpdate()
-    {
-        foreach (var entity in GetEntities<Data>())
+        private struct Data
         {
-            if (entity.QuitGame.Clicked==true)
-            {                
-                Debug.Log("QUIT");
-                Application.Quit();
-                entity.QuitGame.Clicked = false;
+            public QuitComponent QuitGame;
+        }
+
+
+        protected override void OnUpdate()
+        {
+            foreach (var entity in GetEntities<Data>())
+            {
+                if (entity.QuitGame.Clicked == true)
+                {
+                    Debug.Log("QUIT");
+                    Application.Quit();
+                    entity.QuitGame.Clicked = false;
+                }
+
             }
-            
+
         }
 
     }

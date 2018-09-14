@@ -2,25 +2,30 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Unity.Entities;
+using Assets.Scripts.Hybrid.Components;
 
-public class SceneSystem : ComponentSystem
+namespace Assets.Scripts.Hybrid.Systems
 {
-    private struct Data
+    public class SceneSystem : ComponentSystem
     {
-        public SceneComponent ChangeScene;
-    }
-
-
-    protected override void OnUpdate()
-    {
-        foreach (var entity in GetEntities<Data>())
+        private struct Data
         {
-            if (entity.ChangeScene.Clicked==true)
-            {                
-                SceneManager.LoadScene(entity.ChangeScene.LevelName);
-                entity.ChangeScene.Clicked = false;
+            public SceneComponent ChangeScene;
+        }
+
+
+        protected override void OnUpdate()
+        {
+            foreach (var entity in GetEntities<Data>())
+            {
+                if (entity.ChangeScene.Clicked == true)
+                {
+                    SceneManager.LoadScene(entity.ChangeScene.LevelName);
+                    entity.ChangeScene.Clicked = false;
+                }
+
             }
-            
+
         }
 
     }

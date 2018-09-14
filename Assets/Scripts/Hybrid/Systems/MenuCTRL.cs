@@ -1,12 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Assets.Scripts.Hybrid.Components;
 
-public class MenuCTRL : MonoBehaviour
+namespace Assets.Scripts.Hybrid.Systems
 {
-    public void LoadScene(string SceneName)
+    public class MenuCTRL : MonoBehaviour
     {
-        SceneManager.LoadScene(SceneName);
+        public void LoadScene(string SceneName)
+        {
+            SceneManager.LoadScene(SceneName);
+        }
     }
 }
-	
+
+

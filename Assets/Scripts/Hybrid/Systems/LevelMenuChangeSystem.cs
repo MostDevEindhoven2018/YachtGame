@@ -2,36 +2,42 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Unity.Entities;
+using Assets.Scripts.Hybrid.Components;
 
-public class LevelMenuChangeSystem : ComponentSystem
+namespace Assets.Scripts.Hybrid.Systems
 {
-    private struct Data
+    public class LevelMenuChangeSystem : ComponentSystem
     {
-        public LevelMenuChangeComponent LevelMenuChange;
-    }
-
-
-    protected override void OnUpdate()
-    {
-        foreach (var entity in GetEntities<Data>())
+        private struct Data
         {
-            if (entity.LevelMenuChange.Clicked==true)
+            public LevelMenuChangeComponent LevelMenuChange;
+        }
+
+
+        protected override void OnUpdate()
+        {
+            foreach (var entity in GetEntities<Data>())
             {
-                if (entity.LevelMenuChange.MenuEnable.activeInHierarchy == true)
+                if (entity.LevelMenuChange.Clicked == true)
                 {
-                    entity.LevelMenuChange.MenuEnable.SetActive(false);
-                    entity.LevelMenuChange.Clicked =false;
+                    if (entity.LevelMenuChange.MenuEnable.activeInHierarchy == true)
+                    {
+                        entity.LevelMenuChange.MenuEnable.SetActive(false);
+                        entity.LevelMenuChange.Clicked = false;
+                    }
+                    else
+                    {
+                        entity.LevelMenuChange.MenuEnable.SetActive(true);
+                        entity.LevelMenuChange.Clicked = false;
+                    }
                 }
-                else
-                {
-                    entity.LevelMenuChange.MenuEnable.SetActive(true);
-                    entity.LevelMenuChange.Clicked = false;
-                }
+
             }
-            
+
         }
 
     }
-
 }
+
+
 

@@ -2,24 +2,29 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class LevelMenuChangeComponent : MonoBehaviour
+namespace Assets.Scripts.Hybrid.Components
 {
-    public GameObject MenuEnable;
-    public Button button;
-
-    public bool Clicked=false;
-
-    void Clicking()
+    public class LevelMenuChangeComponent : MonoBehaviour
     {
-        Clicked=true;
-    }
+        public GameObject MenuEnable;
+        public Button button;
 
-    void Start()
-    {
-        button = button.GetComponent<Button>();
+        public bool Clicked = false;
 
-        button.onClick.AddListener(Clicking);
-        
+        void Clicking()
+        {
+            Clicked = true;
+        }
+
+        void Start()
+        {
+            button = button.GetComponent<Button>();
+
+            button.onClick.AddListener(Clicking);
+
+        }
     }
 }
-	
+
+
+

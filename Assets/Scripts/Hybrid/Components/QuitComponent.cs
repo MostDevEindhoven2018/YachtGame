@@ -2,23 +2,28 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class QuitComponent : MonoBehaviour
-{    
-    public Button button;
-
-    public bool Clicked=false;
-
-    void Clicking()
+namespace Assets.Scripts.Hybrid.Components
+{
+    public class QuitComponent : MonoBehaviour
     {
-        Clicked=true;
-    }
+        public Button button;
 
-    void Start()
-    {
-        button = button.GetComponent<Button>();
+        public bool Clicked = false;
 
-        button.onClick.AddListener(Clicking);
-        
+        void Clicking()
+        {
+            Clicked = true;
+        }
+
+        void Start()
+        {
+            button = button.GetComponent<Button>();
+
+            button.onClick.AddListener(Clicking);
+
+        }
     }
 }
-	
+
+
+

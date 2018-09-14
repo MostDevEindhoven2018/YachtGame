@@ -5,42 +5,48 @@ using Unity.Entities;
 using UnityEngine.UI;
 using Unity.Mathematics;
 using UnityEngine.SceneManagement;
+using Assets.Scripts.Hybrid.Components;
 
-public class IsAliveSystem : ComponentSystem
+namespace Assets.Scripts.Hybrid.Systems
 {
-    private struct Data2
+    public class IsAliveSystem : ComponentSystem
     {
-        public EnemyComponent Enemy;
-    }
-
-    private struct Data
-    {
-        public ComponentArray<PlayerInput> PlayerInput;
-        public ComponentArray<IsAliveComponent> IsAlive;
-    }
-
-    [Inject] private Data _Player;
-    protected override void OnUpdate()
-    {
-        if (_Player.PlayerInput[0].transform.position.y < -3.5)
+        private struct Data2
         {
-            _Player.IsAlive[0].Health = 0;
+            public EnemyComponent Enemy;
         }
 
-        if (_Player.IsAlive[0].Health <= 0)
+        private struct Data
         {
-            _Player.IsAlive[0].isAlive = false;
+            public ComponentArray<PlayerInput> PlayerInput;
+            public ComponentArray<IsAliveComponent> IsAlive;
         }
 
-        foreach (var entity2 in GetEntities<Data2>())
+        [Inject] private Data _Player;
+        protected override void OnUpdate()
         {
-            var enemyDistance = math.distance(entity2.Enemy.transform.position.y, _Player.PlayerInput[0].transform.position.y);
-
-            if (enemyDistance < 0.5)
+            if (_Player.PlayerInput[0].transform.position.y < -3.5)
             {
-                _Player.IsAlive[0].Health -= entity2.Enemy.Damage;
-            }                
+                _Player.IsAlive[0].Health = 0;
+            }
+
+            if (_Player.IsAlive[0].Health <= 0)
+            {
+                _Player.IsAlive[0].isAlive = false;
+            }
+
+            foreach (var entity2 in GetEntities<Data2>())
+            {
+                var enemyDistance = math.distance(entity2.Enemy.transform.position.y, _Player.PlayerInput[0].transform.position.y);
+
+                if (enemyDistance < 0.5)
+                {
+                    _Player.IsAlive[0].Health -= entity2.Enemy.Damage;
+                }
+            }
         }
     }
 }
+
+
 

@@ -3,26 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Entities;
 using UnityEngine.SceneManagement;
+using Assets.Scripts.Hybrid.Components;
 
-public class RetrySceneSystem : ComponentSystem {
-
-    private struct Data
+namespace Assets.Scripts.Hybrid.Systems
+{
+    public class RetrySceneSystem : ComponentSystem
     {
-        public RetrySceneComponent retryScene;
-    }
 
-
-    protected override void OnUpdate()
-    {
-        foreach (var entity in GetEntities<Data>())
+        private struct Data
         {
-            if (entity.retryScene.Clicked == true)
+            public RetrySceneComponent retryScene;
+        }
+
+
+        protected override void OnUpdate()
+        {
+            foreach (var entity in GetEntities<Data>())
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                entity.retryScene.Clicked = false;
+                if (entity.retryScene.Clicked == true)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    entity.retryScene.Clicked = false;
+                }
+
             }
 
         }
-
     }
+
 }
