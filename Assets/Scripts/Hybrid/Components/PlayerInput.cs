@@ -1,9 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
 
-public class PlayerInput : MonoBehaviour {
+//public class PlayerInput : MonoBehaviour {
 
-    public float Horizontal;
-    public float Vertical;
-}
+//    public float Horizontal;
+//    public float Vertical;
+//}
