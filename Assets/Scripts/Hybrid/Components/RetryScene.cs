@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Assets.Scripts.Hybrid.Components
 {
-    public class RetrySceneComponent : MonoBehaviour
+    public class RetryScene : MonoBehaviour
     {
 
         public Button Retrybutton;

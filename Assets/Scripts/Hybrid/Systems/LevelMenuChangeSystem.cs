@@ -10,7 +10,7 @@ namespace Assets.Scripts.Hybrid.Systems
     {
         private struct Data
         {
-            public LevelMenuChangeComponent LevelMenuChange;
+            public LevelMenuChange LevelMenuChange;
         }
 
 

@@ -4,9 +4,8 @@ using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Hybrid.Components
 {
-    public class MenuChangeComponent : MonoBehaviour
+    public class Quit : MonoBehaviour
     {
-        public GameObject MenuEnable, MenuDisable;
         public Button button;
 
         public bool Clicked = false;

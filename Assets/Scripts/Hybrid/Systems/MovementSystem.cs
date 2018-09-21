@@ -6,7 +6,6 @@ namespace Assets.Scripts.Hybrid.Systems
 {
     public class MovementSystem : ComponentSystem
     {
-
         public struct PlayerGroup
         {
             public Transform Transform;

@@ -4,9 +4,10 @@ using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Hybrid.Components
 {
-    public class QuitComponent : MonoBehaviour
+    public class NextScene : MonoBehaviour
     {
         public Button button;
+
 
         public bool Clicked = false;
 
@@ -24,6 +25,5 @@ namespace Assets.Scripts.Hybrid.Components
         }
     }
 }
-
 
 

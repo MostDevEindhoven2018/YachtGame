@@ -5,9 +5,8 @@ using UnityEngine.UI;
 
 namespace Assets.Scripts.Hybrid.Components
 {
-    public class GoalComponent : MonoBehaviour
+    public class Goal : MonoBehaviour
     {
-
         public bool IsCompleted;
         public Text WinText;
         public GameObject Menus;

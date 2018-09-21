@@ -28,7 +28,7 @@ namespace Assets.Scripts.Hybrid.Systems
                 
                 if (Input.GetKeyDown(KeyCode.UpArrow) && entity.Jump.IsGrounded == true)
                 {
-                    entity.rb.AddForce(new Vector2(0, entity.Speed.YSpeed));
+                    entity.rb.AddForce(new Vector2(0, entity.Jump.IntendedJumpHeigth));
                 }                
             }
         }

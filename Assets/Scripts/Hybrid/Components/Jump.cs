@@ -15,7 +15,7 @@ namespace Assets.Scripts.Hybrid.Components
         public Transform Feet;
         public float BoxWidth;
         public float BoxHeight;
-        public LayerMask WhatIsGround;
+        public LayerMask GroundLayer;
 
         private void OnDrawGizmos()
         {
