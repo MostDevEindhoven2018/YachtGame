@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Hybrid.Components
 {
-    public class Jump : MonoBehaviour
+    public class JumpComponent : MonoBehaviour
     {
         public float MaxJumpHeigth;
         public float IntendedJumpHeigth;

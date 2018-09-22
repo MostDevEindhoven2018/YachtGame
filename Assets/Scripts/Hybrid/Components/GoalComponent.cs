@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Assets.Scripts.Hybrid.Components
 {
-    public class Goal : MonoBehaviour
+    public class GoalComponent : MonoBehaviour
     {
         public bool IsCompleted;
         public Text WinText;

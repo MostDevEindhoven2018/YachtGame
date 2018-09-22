@@ -4,10 +4,10 @@ using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Hybrid.Components
 {
-    public class LevelMenuChange : MonoBehaviour
+    public class NextSceneComponent : MonoBehaviour
     {
-        public GameObject MenuEnable;
         public Button button;
+
 
         public bool Clicked = false;
 
@@ -25,6 +25,5 @@ namespace Assets.Scripts.Hybrid.Components
         }
     }
 }
-
 
 

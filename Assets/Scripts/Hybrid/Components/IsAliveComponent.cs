@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Hybrid.Components
 {
-    public class IsAlive : MonoBehaviour
+    public class IsAliveComponent : MonoBehaviour
     {
 
         public bool isAlive;

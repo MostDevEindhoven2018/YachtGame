@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Hybrid.Components
 {
-    public class Enemy : MonoBehaviour
+    public class EnemyComponent : MonoBehaviour
     {
         public float Damage;
     }

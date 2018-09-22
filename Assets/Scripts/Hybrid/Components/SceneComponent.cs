@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Hybrid.Components
 {
-    public class Scene : MonoBehaviour
+    public class SceneComponent : MonoBehaviour
     {
         public string LevelName;
         public Button button;

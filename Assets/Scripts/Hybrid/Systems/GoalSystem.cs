@@ -13,70 +13,71 @@ namespace Assets.Scripts.Hybrid.Systems
     {
         private struct GoalGroup
         {
-            public Goal Goal;
+            public GoalComponent gc;
         }
 
         private struct PlayerGroup
         {
-            public PlayerInput PlayerInput;
-            public IsAlive IsAlive;
+            public Transform Transform;
+            public PlayerInputComponent PlayerInput;
+            public IsAliveComponent IsAlive;
         }
 
-        [Inject] private PlayerGroup _data;
+
         protected override void OnUpdate()
         {
-            var GoalEntity = GetEntities<GoalGroup>();
+            var GoalEntity = GetEntities<GoalGroup>()[0];
+            var PlayerEntity = GetEntities<PlayerGroup>()[0];
 
             Time.timeScale = 1;
 
 
-            if (GoalEntity.Length > 0)
+
+            var distance =
+                math.distance(GoalEntity.gc.transform.position.x, PlayerEntity.Transform.position.x);
+
+            if (distance < 0.25)
             {
-                var distance =
-                    math.distance(GoalEntity[0].Goal.transform.position.x, _data.InputComponents[0].transform.position.x);
+                GoalEntity.gc.IsCompleted = true;
+            }
 
-                if (distance < 0.25)
+            if ((GoalEntity.gc.IsCompleted == true) && (PlayerEntity.IsAlive.isAlive == true))
+            {
+
+                Debug.Log("I am complete and alive");
+
+                GoalEntity.gc.WinText.text =
+                    SceneManager.GetActiveScene().name.Replace("_", " ") + " completed";
+
+                Time.timeScale = 0;
+
+                Debug.Log("After Freeze I am complete and alive");
+
+                if (GoalEntity.gc.Menus.activeInHierarchy == false)
                 {
-                    GoalEntity[0].Goal.IsCompleted = true;
+                    GoalEntity.gc.RetryLevelInactive();
                 }
 
-                if ((GoalEntity[0].Goal.IsCompleted == true) && (_data.IsAlive[0].isAlive == true))
+
+            }
+            else if ((GoalEntity.gc.IsCompleted == false) && (PlayerEntity.IsAlive.isAlive == false))
+            {
+                GoalEntity.gc.WinText.text =
+                    "Retry " + SceneManager.GetActiveScene().name.Replace("_", " ");
+                Time.timeScale = 0;
+
+                if (GoalEntity.gc.Menus.activeInHierarchy == false)
                 {
-
-                    Debug.Log("I am complete and alive");
-
-                    GoalEntity[0].Goal.WinText.text =
-                        SceneManager.GetActiveScene().name.Replace("_", " ") + " completed";
-
-                    Time.timeScale = 0;
-
-                    Debug.Log("After Freeze I am complete and alive");
-
-                    if (GoalEntity[0].Goal.Menus.activeInHierarchy == false)
-                    {
-                        GoalEntity[0].Goal.RetryLevelInactive();
-                    }
-
-
+                    GoalEntity.gc.NextLevelInactive();
                 }
-                else if ((GoalEntity[0].Goal.IsCompleted == false) && (_data.IsAlive[0].isAlive == false))
-                {
-                    GoalEntity[0].Goal.WinText.text =
-                        "Retry " + SceneManager.GetActiveScene().name.Replace("_", " ");
-                    Time.timeScale = 0;
-
-                    if (GoalEntity[0].Goal.Menus.activeInHierarchy == false)
-                    {
-                        GoalEntity[0].Goal.NextLevelInactive();
-                    }
-                }
-                else
-                {
-                    //Time.timeScale = 1;
-                    GoalEntity[0].Goal.WinText.text = "";
-                }
+            }
+            else
+            {
+                //Time.timeScale = 1;
+                GoalEntity.gc.WinText.text = "";
             }
         }
     }
 }
+
 

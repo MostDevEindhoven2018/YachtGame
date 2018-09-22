@@ -10,7 +10,7 @@ namespace Assets.Scripts.Hybrid.Systems
     {
         private struct Data
         {
-            public NextScene NextScene;
+            public NextSceneComponent NextScene;
         }
 
 

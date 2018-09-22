@@ -13,8 +13,8 @@ namespace Assets.Scripts.Hybrid.Systems
             public SpriteRenderer sr; // Used to flip the sprite when walking towards the left.
 
             // Secondary Components.
-            public PlayerInput PlayerInput; // Used to check for horizontal movement. This is updated without use of the rigidbody in MovementSystem, so it has no horizontal velocity to work with.
-            public Jump Jump; // Used to check whether or not we are jumping, using the IsGrounded boolean.
+            public PlayerInputComponent PlayerInput; // Used to check for horizontal movement. This is updated without use of the rigidbody in MovementSystem, so it has no horizontal velocity to work with.
+            public JumpComponent Jump; // Used to check whether or not we are jumping, using the IsGrounded boolean.
         }
 
         protected override void OnUpdate()

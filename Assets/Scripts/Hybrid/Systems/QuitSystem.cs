@@ -10,7 +10,7 @@ namespace Assets.Scripts.Hybrid.Systems
     {
         private struct Data
         {
-            public Quit QuitGame;
+            public QuitComponent QuitGame;
         }
 
 

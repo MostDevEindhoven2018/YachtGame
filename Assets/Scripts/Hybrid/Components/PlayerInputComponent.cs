@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Hybrid.Components
 {
-    public class PlayerInput : MonoBehaviour
+    public class PlayerInputComponent : MonoBehaviour
     {
 
         public float Horizontal;

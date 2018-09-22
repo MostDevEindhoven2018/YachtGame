@@ -10,10 +10,10 @@ namespace Assets.Scripts.Hybrid.Systems
         public struct PlayerGroup
         {
             public Transform Transform;
-            public PlayerInput PlayerInput;
-            public Speed Speed;
+            public PlayerInputComponent PlayerInput;
+            public SpeedComponent Speed;
             public Rigidbody2D rb;
-            public Jump Jump;
+            public JumpComponent Jump;
         }
 
         public struct EnvironmentGroup

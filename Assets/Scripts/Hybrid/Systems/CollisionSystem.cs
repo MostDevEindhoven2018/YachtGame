@@ -8,7 +8,7 @@ namespace Assets.Scripts.Hybrid.Systems
     {
         public struct PlayerGroup
         {
-            public Jump Jump;
+            public JumpComponent Jump;
         }
 
         // Collision situations.

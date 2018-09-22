@@ -9,7 +9,7 @@ namespace Assets.Scripts.Hybrid.Systems
     {
         public struct InputGroup
         {
-            public PlayerInput PlayerInput;
+            public PlayerInputComponent PlayerInput;
         }
 
         protected override void OnUpdate()

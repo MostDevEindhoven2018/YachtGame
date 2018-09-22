@@ -12,7 +12,7 @@ namespace Assets.Scripts.Hybrid.Systems
 
         private struct Data
         {
-            public RetryScene retryScene;
+            public RetrySceneComponent retryScene;
         }
 
 

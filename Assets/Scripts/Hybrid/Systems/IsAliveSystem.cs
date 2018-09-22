@@ -13,13 +13,13 @@ namespace Assets.Scripts.Hybrid.Systems
     {
         private struct Data2
         {
-            public Enemy Enemy;
+            public EnemyComponent Enemy;
         }
 
         private struct Data
         {
-            public ComponentArray<PlayerInput> PlayerInput;
-            public ComponentArray<IsAlive> IsAlive;
+            public ComponentArray<PlayerInputComponent> PlayerInput;
+            public ComponentArray<IsAliveComponent> IsAlive;
         }
 
         [Inject] private Data _Player;
