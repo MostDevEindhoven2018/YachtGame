@@ -25,8 +25,8 @@ namespace Assets.Scripts.Hybrid.Systems
         {
             foreach (var entity in GetEntities<PlayerGroup>())
             {     
-                
-                if (Input.GetKeyDown(KeyCode.UpArrow) && entity.Jump.IsGrounded == true)
+                //If the jump input is received and the characters feet are on the ground. jump the selected height.
+                if (entity.PlayerInput.Vertical == 1 && entity.Jump.IsGrounded == true)
                 {
                     entity.rb.AddForce(new Vector2(0, entity.Jump.IntendedJumpHeigth));
                 }                

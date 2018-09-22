@@ -15,9 +15,19 @@ namespace Assets.Scripts.Hybrid.Systems
         protected override void OnUpdate()
         {
             foreach (var entity in GetEntities<InputGroup>())
-            {               
+            {    
+                //checks for A, D, left and right arrow keys. notify movement system.
                 entity.PlayerInput.Horizontal = Input.GetAxisRaw("Horizontal");
-                entity.PlayerInput.Vertical = Input.GetAxisRaw("Vertical");
+
+                //check for the Jump key. notify the Jump System.
+                if(Input.GetKeyDown(KeyCode.UpArrow))
+                    {
+                    entity.PlayerInput.Vertical = 1;
+                }
+                else
+                {
+                    entity.PlayerInput.Vertical = 0;
+                }
             }
         }
     }
