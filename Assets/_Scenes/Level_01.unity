@@ -2968,8 +2968,19 @@ Prefab:
       propertyPath: BoxWidth
       value: 0.33
       objectReference: {fileID: 0}
+    - target: {fileID: 114137078446711802, guid: 4bd6f4b2ff72a17448a372b642c4b688,
+        type: 2}
+      propertyPath: IntendedJumpHeigth
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 114137078446711802, guid: 4bd6f4b2ff72a17448a372b642c4b688,
+        type: 2}
+      propertyPath: GroundLayer.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
+    - {fileID: 114488887932204908, guid: 4bd6f4b2ff72a17448a372b642c4b688, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 4bd6f4b2ff72a17448a372b642c4b688, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1011418726 stripped

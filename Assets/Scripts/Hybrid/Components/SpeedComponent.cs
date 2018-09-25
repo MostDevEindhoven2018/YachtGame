@@ -8,6 +8,5 @@ namespace Assets.Scripts.Hybrid.Components
     {
         [Tooltip("This is a positive float value for the speed")]
         public float XSpeed;
-        public float YSpeed;
     }
 }

@@ -11,9 +11,9 @@ namespace Assets.Scripts.Hybrid.Systems
         {
             public Transform Transform;
             public PlayerInputComponent PlayerInput;
-            public SpeedComponent Speed;
-            public Rigidbody2D rb;
+            public Rigidbody2D RigidBody;
             public JumpComponent Jump;
+            public CollisionComponent Body;
         }
 
         public struct EnvironmentGroup
@@ -26,9 +26,9 @@ namespace Assets.Scripts.Hybrid.Systems
             foreach (var entity in GetEntities<PlayerGroup>())
             {     
                 
-                if (Input.GetKeyDown(KeyCode.UpArrow) && entity.Jump.IsGrounded == true)
+                if (Input.GetKeyDown(KeyCode.UpArrow)  && entity.Body.IsGrounded == true)
                 {
-                    entity.rb.AddForce(new Vector2(0, entity.Jump.IntendedJumpHeigth));
+                    entity.RigidBody.AddForce(new Vector2(0, entity.Jump.IntendedJumpHeigth));
                 }                
             }
         }

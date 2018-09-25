@@ -6,7 +6,6 @@ namespace Assets.Scripts.Hybrid.Components
 {
     public class IsAliveComponent : MonoBehaviour
     {
-
         public bool isAlive;
         protected internal float Health;
 

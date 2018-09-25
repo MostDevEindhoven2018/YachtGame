@@ -8,29 +8,38 @@ namespace Assets.Scripts.Hybrid.Systems
     {
         public struct PlayerGroup
         {
-            public JumpComponent Jump;
+            //public PlayerTag PlayerTag;
+
+            public CollisionComponent Collision;
+            public Transform Transform;
         }
 
         // Collision situations.
 
         // Create functions per situation such as touching the ground or touching enemies.
 
-        private bool CheckGroundedCollision(PlayerGroup entity)
+
+        // Set Layer to be checked against
+        private bool CheckCollision(Vector2 BoxPosition, Vector2 BoxMeasurements, LayerMask Layer)
         {
             // Return a boolean whether or not there is overlap between a box created by the first two vectors and ANY gameObject in the given layer.
-            return Physics2D.OverlapBox(                                                                                
-                    new Vector2(entity.Jump.Feet.position.x, entity.Jump.Feet.position.y),      // Set Position of the box 
-                    new Vector2(entity.Jump.BoxWidth, entity.Jump.BoxHeight),                   // Set Measurements of the box
+            return Physics2D.OverlapBox(
+                    BoxPosition,      // Set Position of the box 
+                   BoxMeasurements,                   // Set Measurements of the box
                     360.0f,                                                                                                       // Set Range of Angles to be considered
-                    entity.Jump.GroundLayer);                                                                         // Set Layer to be checked against
+                    Layer);                                                                         // Set Layer to be checked against
+
+            // Set Layer to be checked against
         }
 
         protected override void OnUpdate()
         {
-            foreach (var entity in GetEntities<PlayerGroup>())
+            foreach (var PlayerEntity in GetEntities<PlayerGroup>())
             {
                 // Call all functions
-                entity.Jump.IsGrounded =  CheckGroundedCollision(entity);
+                PlayerEntity.Collision.IsGrounded = CheckCollision(PlayerEntity.Collision.FeetPosition, PlayerEntity.Collision.FeetMeasurements, PlayerEntity.Collision.GroundCollision);
+                //PlayerEntity.Collision.IsGrounded = CheckCollision(PlayerEntity.Collision.BodyPosition, PlayerEntity.Collision.BodyPosition, PlayerEntity.Collision.GoalCollision);
+                //PlayerEntity.Collision.IsGrounded = CheckCollision(PlayerEntity.Collision.BodyPosition, PlayerEntity.Collision.BodyPosition, PlayerEntity.Collision.EnemyCollision);
             }
         }
     }
