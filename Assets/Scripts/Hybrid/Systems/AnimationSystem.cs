@@ -17,14 +17,14 @@ namespace Assets.Scripts.Hybrid.Systems
 
             // Secondary Components.
             public PlayerInputComponent PlayerInput; // Used to check for horizontal movement. This is updated without use of the rigidbody in MovementSystem, so it has no horizontal velocity to work with.
-            public CollisionComponent Body; // Used to check whether or not we are jumping, using the IsGrounded boolean.
+            public CollisionComponent Collision; // Used to check whether or not we are jumping, using the IsGrounded boolean.
         }
 
         protected override void OnUpdate()
         {
             foreach (var PlayerEntity in GetEntities<PlayerGroup>())
             {
-                if (PlayerEntity.Body.IsGrounded == true) // We are grounded, so set the animation to running or idle
+                if (PlayerEntity.Collision.IsGrounded == true) // We are grounded, so set the animation to running or idle
                 {
                     if (PlayerEntity.PlayerInput.Horizontal < 0) // We are going to the left, so flip the sprites.
                     {
