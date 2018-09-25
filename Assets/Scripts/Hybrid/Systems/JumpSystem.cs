@@ -9,7 +9,6 @@ namespace Assets.Scripts.Hybrid.Systems
 
         public struct PlayerGroup
         {
-            public Transform Transform;
             public PlayerInputComponent PlayerInput;
             public Rigidbody2D RigidBody;
             public JumpComponent Jump;
