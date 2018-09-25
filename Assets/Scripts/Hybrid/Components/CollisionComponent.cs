@@ -17,16 +17,16 @@ namespace Assets.Scripts.Hybrid.Components
         // In here, we set all different body parts. For now, we only have feet. Make all body parts private, and create public getters for their measurements and positions for clearer 
         // readability where their are used.
 
-        // Entire Body ( for touching enemies and goalobjects )
+        // Entire Body ( for touching enemies and goal objects )
         public Transform Body;
-        private float BodyBoxWidth;
-        private float BodyBoxHeight;
+        public float BodyBoxWidth;
+        public float BodyBoxHeight;
 
         public Vector2 BodyMeasurements
         {
             get
             {
-                return new Vector2(BodyBoxHeight, BodyBoxWidth);
+                return new Vector2(BodyBoxWidth, BodyBoxHeight);
             }
         }
 
@@ -40,14 +40,14 @@ namespace Assets.Scripts.Hybrid.Components
 
         // Feet ( for jumping on platforms and enemies)
         public Transform Feet;
-        private float FeetBoxWidth;
-        private float FeetBoxHeight;
+        public float FeetBoxWidth;
+        public float FeetBoxHeight;
 
         public Vector2 FeetMeasurements
         {
             get
             {
-                return new Vector2(FeetBoxHeight, FeetBoxWidth);
+                return new Vector2(FeetBoxWidth, FeetBoxHeight);
             }
         }
 
@@ -66,8 +66,6 @@ namespace Assets.Scripts.Hybrid.Components
         {
             Gizmos.DrawWireCube(FeetPosition, FeetMeasurements);
             Gizmos.DrawWireCube(BodyPosition, BodyMeasurements);
-
         }
-
     }
 }

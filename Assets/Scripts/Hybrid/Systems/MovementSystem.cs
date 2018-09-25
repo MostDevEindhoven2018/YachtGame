@@ -11,9 +11,6 @@ namespace Assets.Scripts.Hybrid.Systems
             public Transform Transform;
             public PlayerInputComponent PlayerInput;
             public SpeedComponent Speed;
-            public Rigidbody2D rb;
-            public SpriteRenderer sr;
-            public Animator Anim;
         }
 
         protected override void OnUpdate()
