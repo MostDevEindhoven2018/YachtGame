@@ -10,6 +10,7 @@ namespace Assets.Scripts.Hybrid.Systems
         {
             //public PlayerTag PlayerTag;
 
+            public BodyComponent Body;
             public CollisionComponent Collision;
             public Transform Transform;
         }
@@ -32,8 +33,8 @@ namespace Assets.Scripts.Hybrid.Systems
             foreach (var PlayerEntity in GetEntities<PlayerGroup>())
             {
                 // Call all functions
-                PlayerEntity.Collision.IsGrounded = CheckCollision(PlayerEntity.Collision.FeetPosition, PlayerEntity.Collision.FeetMeasurements, PlayerEntity.Collision.GroundCollision);
-                //PlayerEntity.Collision.IsGrounded = CheckCollision(PlayerEntity.Collision.BodyPosition, PlayerEntity.Collision.BodyPosition, PlayerEntity.Collision.GoalCollision);
+                PlayerEntity.Collision.TouchingGround = CheckCollision(PlayerEntity.Body.FeetPosition, PlayerEntity.Body.FeetMeasurements, PlayerEntity.Collision.GroundCollision);
+                PlayerEntity.Collision.TouchingGoal = CheckCollision(PlayerEntity.Body.BodyPosition, PlayerEntity.Body.BodyMeasurements, PlayerEntity.Collision.GoalCollision);
                 //PlayerEntity.Collision.IsGrounded = CheckCollision(PlayerEntity.Collision.BodyPosition, PlayerEntity.Collision.BodyPosition, PlayerEntity.Collision.EnemyCollision);
             }
         }

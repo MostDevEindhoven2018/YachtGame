@@ -12,20 +12,15 @@ namespace Assets.Scripts.Hybrid.Systems
             public PlayerInputComponent PlayerInput;
             public Rigidbody2D RigidBody;
             public JumpComponent Jump;
-            public CollisionComponent Body;
+            public CollisionComponent Collision;
         }
-
-        public struct EnvironmentGroup
-        {
-
-        }
-
+        
         protected override void OnUpdate()
         {
             foreach (var entity in GetEntities<PlayerGroup>())
             {     
                 //If the jump input is received and the characters feet are on the ground. jump the selected height.
-                if (entity.PlayerInput.Vertical == 1 && entity.Body.IsGrounded == true)
+                if (entity.PlayerInput.Vertical == 1 && entity.Collision.TouchingGround == true)
                 {
                     entity.RigidBody.AddForce(new Vector2(0, entity.Jump.IntendedJumpHeigth));
                 }                

@@ -12,6 +12,7 @@ namespace Assets.Scripts.Hybrid.Systems
 
             // Renderer contains the animator and the sprite renderer used to update the sprites.
             public RendererComponent Renderer;
+            // It contains: 
              // Animator:  Used to set and update the animations. See the file Cat in the folder Assets\Animations for all transitions and meaning of states.
              // SpriteRenderer: Used to flip the sprite when walking towards the left.
 
@@ -24,7 +25,7 @@ namespace Assets.Scripts.Hybrid.Systems
         {
             foreach (var PlayerEntity in GetEntities<PlayerGroup>())
             {
-                if (PlayerEntity.Collision.IsGrounded == true) // We are grounded, so set the animation to running or idle
+                if (PlayerEntity.Collision.TouchingGround == true) // We are grounded, so set the animation to running or idle
                 {
                     if (PlayerEntity.PlayerInput.Horizontal < 0) // We are going to the left, so flip the sprites.
                     {

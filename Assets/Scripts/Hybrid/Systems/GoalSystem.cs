@@ -1,5 +1,4 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine.SceneManagement;
@@ -14,15 +13,15 @@ namespace Assets.Scripts.Hybrid.Systems
         private struct GoalGroup
         {
             public GoalComponent Goal;
-
-            public Transform Transform;
         }
 
         private struct PlayerGroup
         {
             public Transform Transform;
+            public CollisionComponent Collision;
             public PlayerInputComponent PlayerInput;
             public IsAliveComponent IsAlive;
+
         }
 
 
@@ -32,24 +31,30 @@ namespace Assets.Scripts.Hybrid.Systems
             {
                 foreach (var GoalEntity in GetEntities<GoalGroup>()) // Same here.
                 {
+                    // TimeScale is set to 1. This is normal time. Later this is set to 0 to freeze time.
                     Time.timeScale = 1;
                     
-                    var distance =
-                        math.distance(GoalEntity.Transform.position.x, PlayerEntity.Transform.position.x);
-
-                    if (distance < 0.25)
+                    // Link the CollisionSystem to this system and continue working with the internal boolean.
+                    if (PlayerEntity.Collision.TouchingGoal == true)
                     {
                         GoalEntity.Goal.IsCompleted = true;
+                    }else
+                    {
+                        GoalEntity.Goal.IsCompleted = false;
                     }
+
 
                     if ((GoalEntity.Goal.IsCompleted == true) && (PlayerEntity.IsAlive.isAlive == true))
                     {
 
                         Debug.Log("I am complete and alive");
 
+
+                        // Set the text to include the current level.
                         GoalEntity.Goal.WinText.text =
                             SceneManager.GetActiveScene().name.Replace("_", " ") + " completed";
 
+                        // Freeze time.
                         Time.timeScale = 0;
 
                         Debug.Log("After Freeze I am complete and alive");
@@ -74,7 +79,6 @@ namespace Assets.Scripts.Hybrid.Systems
                     }
                     else
                     {
-                        //Time.timeScale = 1;
                         GoalEntity.Goal.WinText.text = "";
                     }
                 }
