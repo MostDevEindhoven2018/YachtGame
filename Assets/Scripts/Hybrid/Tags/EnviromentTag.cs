@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Assets.Scripts.Hybrid.Components
+namespace Assets.Scripts.Hybrid.Tags
 {
     class EnviromentTag : MonoBehaviour
     {

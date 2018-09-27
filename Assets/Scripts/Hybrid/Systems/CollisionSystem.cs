@@ -35,7 +35,7 @@ namespace Assets.Scripts.Hybrid.Systems
                 // Call all functions
                 PlayerEntity.Collision.TouchingGround = CheckCollision(PlayerEntity.Body.FeetPosition, PlayerEntity.Body.FeetMeasurements, PlayerEntity.Collision.GroundCollision);
                 PlayerEntity.Collision.TouchingGoal = CheckCollision(PlayerEntity.Body.BodyPosition, PlayerEntity.Body.BodyMeasurements, PlayerEntity.Collision.GoalCollision);
-                //PlayerEntity.Collision.IsGrounded = CheckCollision(PlayerEntity.Collision.BodyPosition, PlayerEntity.Collision.BodyPosition, PlayerEntity.Collision.EnemyCollision);
+                PlayerEntity.Collision.TouchingEnemy = CheckCollision(PlayerEntity.Body.BodyPosition, PlayerEntity.Body.BodyPosition, PlayerEntity.Collision.EnemyCollision);
             }
         }
     }

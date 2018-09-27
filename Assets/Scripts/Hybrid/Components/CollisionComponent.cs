@@ -18,5 +18,6 @@ namespace Assets.Scripts.Hybrid.Components
         // All booleans that will be used by other systems.
         public bool TouchingGround;
         public bool TouchingGoal;
+        public bool TouchingEnemy;
     }
 }

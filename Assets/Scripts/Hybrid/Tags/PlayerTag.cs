@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Assets.Scripts.Hybrid.Components
+namespace Assets.Scripts.Hybrid.Tags
 {
     public class PlayerTag : MonoBehaviour
     {

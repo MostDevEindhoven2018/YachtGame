@@ -55,7 +55,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.45, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -66,7 +66,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4, y: 7.12}
+  m_Size: {x: 0.9, y: 7.12}
   m_EdgeRadius: 0
 --- !u!114 &114118665455091412
 MonoBehaviour:
@@ -91,12 +91,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsCompleted: 0
-  WinText: {fileID: 114197959457163276, guid: 5d39a2ad9ff5a7d4da34e7bbb78612ef, type: 2}
-  Menus: {fileID: 1130728082100592, guid: 5d39a2ad9ff5a7d4da34e7bbb78612ef, type: 2}
-  NextLevelButton: {fileID: 1365278367724808, guid: 5d39a2ad9ff5a7d4da34e7bbb78612ef,
-    type: 2}
-  RetryLevelButton: {fileID: 1766164420321350, guid: 5d39a2ad9ff5a7d4da34e7bbb78612ef,
-    type: 2}
+  WinText: {fileID: 0}
+  Menus: {fileID: 0}
+  NextLevelButton: {fileID: 0}
+  RetryLevelButton: {fileID: 0}
 --- !u!212 &212491960193256264
 SpriteRenderer:
   m_ObjectHideFlags: 1
